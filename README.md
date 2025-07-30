@@ -1,164 +1,101 @@
 # Lazzoni Cabinet Configurator
 
-Modern 3D cabinet configurator built with Three.js for Lazzoni Furniture.
-
-## 🎯 Project Overview
-
-This is a technical evaluation case study demonstrating the ability to build a modular, interactive, and resizable 3D cabinet configurator using Three.js. The application allows users to customize cabinet dimensions in real-time with realistic 3D visualization.
-
-## ✨ Features
-
-### Core Functionality
-- **3D Model Creation**: Basic cube cabinet created using JavaScript and Three.js
-- **Real-time Dimension Adjustment**: Width, depth, and height sliders with real measurements (cm)
-- **Modular System**: Automatic module addition when width exceeds 60cm
-- **Individual Module Configuration**: Each module can have different dimensions
-- **OrbitControls**: Full 3D camera control and navigation
-
-### Advanced Features
-- **Realistic Materials**: PBR materials with wood, white/black/gray lacquer options
-- **Professional Lighting**: HDRI-style lighting with shadows and multiple light sources
-- **Responsive Design**: Modern UI that adapts to different screen sizes
-- **Real Measurements**: All dimensions in centimeters with proper scaling
-
-### Technical Implementation
-- **No External Models**: All geometry created programmatically
-- **Modular Architecture**: Clean, readable, and well-commented code
-- **Performance Optimized**: Efficient rendering with proper shadow mapping
-- **Modern Development**: Built with Vite for fast development and building
+3D Cabinet Design Application - Interactive cabinet configurator built with Three.js.
 
 ## 🚀 Live Demo
 
-**Demo URL**: [https://lazzoni-cabinet-configurator.vercel.app](https://lazzoni-cabinet-configurator.vercel.app)
+**Demo Link**: [https://fey-threejs-app.netlify.app](https://fey-threejs-app.netlify.app)
 
-## 🛠️ Installation & Setup
+## ✨ Features
 
-### Prerequisites
-- Node.js (v16 or higher)
-- npm or yarn
+- 🎨 3D cabinet design and visualization
+- 📏 Real-time dimension adjustment (width, depth, height)
+- 🎨 Different color options (brown, black, gray)
+- 💡 Dynamic lighting settings
+- 🖱️ Mouse 3D controls (zoom, pan, rotate)
+- 📱 Responsive design
 
-### Installation Steps
+## 🛠️ Technologies
 
-1. **Clone the repository**
-   ```bash
-   git clone <repository-url>
-   cd lazzoni-cabinet-configurator
-   ```
+- **Three.js** - 3D graphics library
+- **Vite** - Build tool and development server
+- **Vanilla JavaScript** - Modern ES6+ syntax
+- **CSS3** - Modern styling
 
-2. **Install dependencies**
-   ```bash
-   npm install
-   ```
+## 📦 Installation
 
-3. **Start development server**
-   ```bash
-   npm run dev
-   ```
+### Requirements
+- Node.js 18+
+- npm
 
-4. **Build for production**
-   ```bash
-   npm run build
-   ```
+### Steps
 
-## 📁 Project Structure
-
-```
-lazzoni-cabinet-configurator/
-├── index.html          # Main HTML file
-├── style.css           # Modern CSS styles
-├── main.js            # Three.js application logic
-├── package.json       # Dependencies and scripts
-├── vite.config.js     # Vite configuration
-└── README.md          # Project documentation
+1. Clone the project:
+```bash
+git clone <repository-url>
+cd threejs
 ```
 
-## 🎮 Usage
+2. Install dependencies:
+```bash
+npm install
+```
 
-### Basic Controls
-- **Dimension Sliders**: Adjust width, depth, and height of the cabinet
-- **Material Selector**: Choose between wood, white, black, or gray lacquer
-- **Lighting Controls**: Adjust light intensity and toggle shadows
-- **Camera Reset**: Reset camera to default position
-- **Module Selection**: Click on modules in the list to configure individual modules
+3. Start development server:
+```bash
+npm run dev
+```
 
-### 3D Navigation
-- **Mouse Drag**: Rotate camera around the cabinet
-- **Mouse Wheel**: Zoom in/out
-- **Right Mouse Drag**: Pan camera
+4. Open `http://localhost:3000` in your browser
 
-### Key Features
-- **Real Measurements**: All dimensions are in centimeters
-- **Modular System**: Automatically adds modules when width exceeds 60cm
-- **Individual Configuration**: Each module can have different dimensions
-- **Professional Rendering**: Realistic materials and lighting
+## 🚀 Deploy
 
-## 🔧 Technical Details
-
-### Three.js Implementation
-- **Scene Setup**: Professional 3D environment with ground plane and grid
-- **Camera System**: Perspective camera with OrbitControls
-- **Lighting System**: Multiple directional lights with shadows
-- **Material System**: PBR materials with realistic properties
-- **Geometry Creation**: Programmatic cabinet creation with doors and handles
-
-### Architecture
-- **Modular Design**: Clean separation of concerns
-- **Event-Driven**: Responsive UI with real-time updates
-- **Performance Optimized**: Efficient rendering pipeline
-- **Scalable**: Easy to extend with new features
-
-### Key Classes
-- `CabinetConfigurator`: Main application class
-- Module management system
-- Material and lighting systems
-- UI event handling
-
-## 🎨 Design Features
-
-### Modern UI
-- Clean, professional interface
-- Responsive design for all devices
-- Intuitive controls and feedback
-- Real-time dimension display
-
-### 3D Visualization
-- Realistic cabinet representation
-- Professional lighting setup
-- Smooth camera controls
-- High-quality materials
-
-## 📊 Evaluation Criteria Met
-
-✅ **Clean, readable, and well-commented code structure**
-✅ **3D model creation and manipulation**
-✅ **Creativity and bonus features**
-✅ **Modular system implementation**
-✅ **Real-time dimension adjustment**
-✅ **Professional lighting and materials**
-
-## 🚀 Deployment
-
-The application is deployed on Vercel and can be accessed at:
-[https://lazzoni-cabinet-configurator.vercel.app](https://lazzoni-cabinet-configurator.vercel.app)
-
-### Build Process
+### Production Build
 ```bash
 npm run build
 ```
 
-### Deployment Steps
-1. Build the project: `npm run build`
-2. Deploy the `dist` folder to your hosting platform
-3. Configure your domain (optional)
+### Netlify Deployment
+This project is deployed on Netlify. For automatic deployment:
+- Build Command: `npm run build`
+- Publish Directory: `dist`
 
-## 🤝 Contributing
+## 🎮 Usage
 
-This is a technical evaluation project for Lazzoni Furniture. For any questions or feedback, please contact the development team.
+1. **Dimension Adjustment**: Use sliders to change cabinet dimensions
+2. **Color Change**: Select different colors from dropdown menu
+3. **3D Controls**:
+- Mouse wheel: Zoom in/out
+- Mouse drag: Rotate
+- Right click + drag: Pan
+4. **Lighting Settings**: Use light intensity slider
+
+## 📁 Project Structure
+
+```
+threejs/
+├── index.html # Main HTML file
+├── main.js # Three.js application code
+├── style.css # Style file
+├── vite.config.js # Vite configuration
+├── netlify.toml # Netlify deployment settings
+├── public/
+│ └── _redirects # SPA routing redirects
+└── dist/ # Build output
+```
+
+## 🔧 Troubleshooting
+
+### Common Issues
+
+- **WebGL support**: Make sure your browser supports WebGL
+- **JavaScript error**: Check error messages in console (F12)
+- **Asset loading**: Ensure CSS and JS files are loaded correctly
 
 ## 📄 License
 
-This project is created for technical evaluation purposes. All rights reserved by Lazzoni Furniture.
+MIT License
 
 ---
 
-**Developed for Lazzoni Furniture - Technical Evaluation Case Study** 
+**Developer**: yaz-fey
